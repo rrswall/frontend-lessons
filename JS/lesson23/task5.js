@@ -1,18 +1,10 @@
-let numbers = [5, 2, 9, 1, 3];
-let sortedArray = [];
-function sortNUmbers() {
-
-    while (numbers.length > 0) {
-        let min = Math.min(...numbers);
-
-        sortedArray.push(min);
-
-        let index = numbers.indexOf(min);
-        numbers.splice(index, 1);
-    }
-
-    return sortedArray;
+const user = {
+    name: 'roya',
+    surname: 'zargarova',
+    birthday: ' 03.02.2007',
 }
 
-sortNUmbers(numbers)
-console.log(`artan sira ile siralanmis siyahi: ${sortedArray}`)
+user.age = 18
+delete user.birthday
+user.name = 'rashad'
+console.log(user)
